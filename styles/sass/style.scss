@@ -1,24 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Satisfy&display=swap');
+@import 'variables.scss';
 @import 'reset.scss';
 
-//Typo
-$big-title: 6rem;
-$strong-title: 3.5rem;
-$h2-title: 3rem;
-$h3-title: 2.5rem;
-$h4-title: 4.5rem;
-$text-normal: 1.5rem;
-// $text-button: 2.5rem;
-
-//Color
-$text-color: rgba(82, 82, 82, 1);
-$backg-primary: rgba(62, 105, 83, 1);
-
-//Fonts
-$fontFamily-satisfy: 'Satisfy', cursive;
-$fontFamily-normal: 'Poppins', sans-serif;
-$fontSize-medium: medium;
-$fontSize-light: light;
 
 body {
     font-size: $text-normal;
@@ -40,7 +23,6 @@ h2 {
 h3 {
     font-size: $h3-title;
     padding-bottom: 2.5rem;
-    text-align: center;
 }
 
 a {
@@ -52,6 +34,28 @@ p {
     font-weight: lighter;
 }
 
+input, textarea {
+    width: 100%;
+    padding: 2rem 1.5rem 2rem 3rem;
+    border-radius: 10rem;
+    border: 1px solid #525252;
+    font-family: $fontFamily-normal;
+    box-shadow: 0px 3px 6px #00000052;
+    width: 40rem;
+    outline: none;
+}
+
+textarea {
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+button {
+    border: none;
+    font-size: $text-normal;
+    cursor: pointer;
+}
 .bd-flex {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +66,7 @@ p {
     display: inline-block;
     background-color: $backg-primary;
     margin-top: 2.3rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 4rem;
     color: white;
     font-weight: lighter;
     border-radius: 10rem;
@@ -72,9 +76,14 @@ p {
     -o-border-radius: 10rem;
 }
 
+.section-title-center {
+    text-align: center;
+}
+
+
 .bd-container {
-    max-width: 1920px;
-    width: calc(100% - 14rem);
+    max-width: 968px;
+    width: calc(100% - 3rem);
     margin: 0 auto;
 }
 
@@ -102,6 +111,8 @@ p {
     }
 }
 
+
+
 //Header Fixed
 .header {
     position: fixed;
@@ -110,6 +121,12 @@ p {
     top: 0;
     left: 0;
     z-index: 1000;
+}
+.scroll-header {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    transition: 1s;
+
 }
 //NAV
 .nav {
@@ -159,17 +176,29 @@ p {
 }
 
 .about {
-    text-align: center;
+
+    &__container {
+        justify-content: space-between;
+    }
 
     &__content {
+        margin-top: 3.5rem;
         max-width: 53rem;
-        text-align: left;
+    }
+
+    &__button {
+        text-align: center;
+    }
+
+    &__figure {
+        max-width: 25rem;
     }
 
 }
 
+//Online
 .online {
-    text-align: center;
+    background: transparent linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;    text-align: center;
 
     &__container {
         justify-content: space-around;
@@ -180,4 +209,24 @@ p {
         max-width: 38rem;
         
     }
+}
+
+//Contact 
+.contact {
+    text-align: left;
+
+    &__form {
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    &__formgroup {
+        margin-top: 2.5rem;
+    }
+
+    &__figure {
+        max-width: 54rem;
+    }
+
+
 }

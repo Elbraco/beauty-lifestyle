@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav bd-flex bd-container">
-            <a href="#">LOGO</a>
+            <a href="index.html"><img src="img/logo.png" alt="" srcset=""></a>
 
             <div class="nav__menu fadein">
 
@@ -37,23 +37,29 @@
     </section>
 
     <section class="about section bd-container">
-        <h3>About</h3>
+        <h3 class="section-title-center" >About</h3>
         <div class="about__container bd-flex">
             <div class="about__content">
                 <p class="about__text"> <span class="font-satisfy"> Beauty&Lifestyle,</span> founded by Jane Doe in April 2020, is an online platform to provide educational courses to the public.</p>
                 <p class="about__text"> <span class="bold"> The purpose of the company </span>is to educate people how to live a natural lifestyle
                     with better eating habits, with better self-care habits and more physical movement.</p>
-            </div>
+                    
+                    
+
+                </div>
+                
+            <figure class="about__figure">
+                <img src="img/photo-1522108098940-de49801b5b40.png" alt="" srcset="">
+            </figure>
         </div>
-        <a href="#" class="button">Read more</a>
-        <figure class="about__figure">
-            <img src="/img/" alt="" srcset="">
-        </figure>
+        <div class='about__button'>
+            <a href="#" class="button">Read more</a>
+        </div>
     </section>
 
-    <section class="online bd-container">
+    <section class="online section">
         <h2>Online Projects</h2>
-        <div class="online__container bd-flex">
+        <div class="online__container bd-container bd-flex">
 
             <div class="online__studio">
                 <h3>Face Studio</h3>
@@ -73,6 +79,30 @@
 
         </div>
     </section>
+
+    <section class="contact section bd-container">
+        <h3>Contact us!</h3>
+        <div class="contact__form bd-flex">
+        <form action="">
+            <div class="contact__formgroup">
+                <input type="text" placeholder="Your Name">
+            </div>
+
+            <div class="contact__formgroup">
+                <input type="text" placeholder="Your Email">
+            </div>
+
+            <div class="contact__formgroup">
+                <textarea rows="7" cols="10" placeholder="Your message"></textarea>
+            </div>
+            <button class="button" type="submit">Submit</button>
+        </form>
+        <figure class="contact__figure">
+            <img src="img/hello.png" alt="" srcset="">
+        </figure>
+    </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
