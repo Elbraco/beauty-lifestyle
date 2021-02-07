@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Satisfy&display=swap');
+@import 'reset.scss';
+
+//Typo
+$big-title: 6rem;
+$strong-title: 3.5rem;
+$h2-title: 3rem;
+$h3-title: 2.5rem;
+$h4-title: 4.5rem;
+$text-normal: 1.5rem;
+// $text-button: 2.5rem;
+
+//Color
+$text-color: rgba(82, 82, 82, 1);
+$backg-primary: rgba(62, 105, 83, 1);
+
+//Fonts
+$fontFamily-satisfy: 'Satisfy', cursive;
+$fontFamily-normal: 'Poppins', sans-serif;
+$fontSize-medium: medium;
+$fontSize-light: light;
+
+body {
+    font-size: $text-normal;
+    color: $text-color;
+    font-family: $fontFamily-normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: $fontFamily-satisfy;
+}
+
+h1 {
+    font-size: $big-title;
+}
+h2 {
+    font-size: $h2-title;
+    padding-bottom: 2.5rem;
+}
+h3 {
+    font-size: $h3-title;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+}
+
+.bd-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.button {
+    display: inline-block;
+    background-color: $backg-primary;
+    margin-top: 2.3rem;
+    padding: 1.5rem 2rem;
+    color: white;
+    font-weight: lighter;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+.bd-container {
+    max-width: 1920px;
+    width: calc(100% - 14rem);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 7rem 0 5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+.font-satisfy {
+    font-family: $fontFamily-satisfy;
+}
+.fadein {
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//Header Fixed
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+//NAV
+.nav {
+    font-family: $fontFamily-satisfy;
+    justify-content: space-between;
+    padding: 3.5rem 0 2.5rem;
+
+    &__link {
+        margin-left: 2.2rem;
+        color: $text-color;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        &:hover {
+            color: whitesmoke;
+        }
+
+    }
+}
+
+//BACKGROUND HEADER
+
+.bg-header {
+    position: relative;
+    padding: 35.2rem 0 10rem 4rem;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__content {
+        position: relative;
+        z-index: 10;
+    }
+
+}
+
+.about {
+    text-align: center;
+
+    &__content {
+        max-width: 53rem;
+        text-align: left;
+    }
+
+}
+
+.online {
+    text-align: center;
+
+    &__container {
+        justify-content: space-around;
+    }
+
+
+    &__studio, &__jane {
+        max-width: 38rem;
+        
+    }
+}
