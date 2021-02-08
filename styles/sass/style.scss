@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Satisfy&display=swap');
 @import 'variables.scss';
 @import 'reset.scss';
+@import 'ourstory.scss';
 
 
 body {
@@ -15,6 +16,8 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: $big-title;
+    color: white;
+    text-shadow: 0px 3px 6px #36270E93;
 }
 h2 {
     font-size: $h2-title;
@@ -30,8 +33,12 @@ a {
 }
 
 p {
-    padding-bottom: 2rem;
     font-weight: lighter;
+}
+strong {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 3px 6px #36270E93;
 }
 
 input, textarea {
@@ -94,12 +101,19 @@ button {
 .bold {
     font-weight: bold;
 }
+.blue-color {
+    color: #4379A8;
+}
 .font-satisfy {
     font-family: $fontFamily-satisfy;
 }
 .fadein {
-    animation: fadeIn 4s;
-    -webkit-animation: fadeIn 4s;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+}
+.relief-bg {
+    background: transparent linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;    
+
 }
 
 @keyframes fadeIn {
@@ -143,7 +157,7 @@ button {
         -ms-transition: .5s;
         -o-transition: .5s;
         &:hover {
-            color: whitesmoke;
+            color: black;
         }
 
     }
@@ -164,10 +178,7 @@ button {
         object-fit: cover;
     }
 
-    &__text {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
+    
     &__content {
         position: relative;
         z-index: 10;
@@ -198,16 +209,20 @@ button {
 
 //Online
 .online {
-    background: transparent linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;    text-align: center;
+    text-align: center;
 
     &__container {
         justify-content: space-around;
+        align-items: flex-end;
     }
 
 
     &__studio, &__jane {
         max-width: 38rem;
-        
+    }
+
+    &__text {
+        margin-bottom: 2rem;
     }
 }
 
@@ -228,5 +243,36 @@ button {
         max-width: 54rem;
     }
 
+}
 
+//FOOTER
+.footer {
+    background: transparent linear-gradient(180deg, #525252 0%, #101010 100%) 0% 0% no-repeat padding-box;
+    color: white;
+    padding-top: 4rem;
+
+    &__social {
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 57rem;
+    }
+
+    &__company, &__city {
+        margin-bottom: 1rem;
+    }
+    &__mail {
+        color: white;
+    }
+
+    &__bx {
+        font-size: 4rem;
+        color: white;
+        margin-right: 1rem;
+    }
+}
+.nav--footer {
+    text-align: center;
+}
+.nav__link-color {
+    color: white;
 }
