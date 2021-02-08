@@ -1,0 +1,45 @@
+// BIG TITLE
+.story {
+    background-color: black;
+    padding: 23rem 5rem;
+
+    &__container {
+        text-align: center;
+    }
+}
+
+// BEAUTY
+.beauty {
+    
+    &__container {
+        justify-content: space-between;
+        padding-right: 10rem;
+    }
+
+    &__content {
+        max-width: 32rem;
+    }
+    &__para {
+        margin-bottom: 5rem;
+    }
+
+    &__figure {
+        position: relative;
+        max-width: 25rem;
+
+    }
+
+}
+
+// THE MESSAGE
+.message {
+    text-align: center;
+
+    &__content {
+        position: relative;
+    }
+
+    &__bubble-one {
+        
+    }
+}

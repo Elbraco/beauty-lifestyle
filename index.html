@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- STYLE -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Beauty&Lifestyle</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header" id="header">
+        <!-- NAV -->
         <nav class="nav bd-flex bd-container">
-            <a href="index.html"><img src="img/logo.png" alt="" srcset=""></a>
+            <img src="img/logo.png" alt="image logo">
 
             <div class="nav__menu fadein">
 
-                <a class="nav__link" href="#">Home</a>
-                <a class="nav__link" href="#">Our Story</a>
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="ourstory.html">Our Story</a>
                 <a class="nav__link" href="#">Studio</a>
                 <a class="nav__link" href="#">Contact</a>
                 <a class="nav__link" href="#">My Account</a>
@@ -25,17 +30,18 @@
             </div>
         </nav>
     </header>
+    <main>
     <!-- BIG TITLE -->
     <section class="bg-header">
         <div class="bg-header__video">
-            <video src="video/production ID_3763028.mp4" muted loop autoplay></video>
+            <video src="video/video.mp4" muted loop autoplay></video>
         </div>
         <div class="bg-header__content">
         <h1 class="bg-header__title fadein">Beauty & Lifestyle</h1>
         <strong class="bg-header__text fadein">An online platform to deliver health, beauty, movement & joy</strong>
     </div>
     </section>
-
+    <!-- ABOUT -->
     <section class="about section bd-container">
         <h3 class="section-title-center" >About</h3>
         <div class="about__container bd-flex">
@@ -43,13 +49,10 @@
                 <p class="about__text"> <span class="font-satisfy"> Beauty&Lifestyle,</span> founded by Jane Doe in April 2020, is an online platform to provide educational courses to the public.</p>
                 <p class="about__text"> <span class="bold"> The purpose of the company </span>is to educate people how to live a natural lifestyle
                     with better eating habits, with better self-care habits and more physical movement.</p>
-                    
-                    
-
                 </div>
                 
             <figure class="about__figure">
-                <img src="img/photo-1522108098940-de49801b5b40.png" alt="" srcset="">
+                <img src="img/photo-1522108098940-de49801b5b40.png" alt="about">
             </figure>
         </div>
         <div class='about__button'>
@@ -57,29 +60,30 @@
         </div>
     </section>
 
-    <section class="online section">
+    <!-- ONLINE -->
+    <section class="online section relief-bg ">
         <h2>Online Projects</h2>
         <div class="online__container bd-container bd-flex">
 
             <div class="online__studio">
                 <h3>Face Studio</h3>
-                <p>An online platform to provide you with guidance on how to look after your beauty with the most natural methods!</p>
-                <p>Face Studio will help you release, repair and renew your face as well as add more confidence, radiance and glow to your presence through facial exercises, massage techniques, the right diet and much more!</p>
-                <p>Visit at the link below, choose the level you want to commit to and start your journey with us!</p>               
+                <p class="online__text">An online platform to provide you with guidance on how to look after your beauty with the most natural methods!</p>
+                <p class="online__text">Face Studio will help you release, repair and renew your face as well as add more confidence, radiance and glow to your presence through facial exercises, massage techniques, the right diet and much more!</p>
+                <p class="online__text">Visit at the link below, choose the level you want to commit to and start your journey with us!</p>               
                 <a href="#" class="button">Read more</a>
 
             </div>
             <div class="online__jane">
                 <h3>Jane Doe Lifestyle</h3>
-                <p>Lifestyle habits can build the health and success of one’s life. However, many are not fully aware between the difference of positive and negative habits, and their impact on physical and emotional well-being. <span class="font-satisfy"> Beauty&Lifestyle</span> and the founder Jane Doe, a certified Health Coach, offer you to take your life into control and learn the best tricks and tips through the courses and consultations available online.</p>
-                <p>Visit the link below for private coaching programs and <span class="bold"> say YES to living your best life!</span></p>
+                <p class="online__text">Lifestyle habits can build the health and success of one’s life. However, many are not fully aware between the difference of positive and negative habits, and their impact on physical and emotional well-being. <span class="font-satisfy"> Beauty&Lifestyle</span> and the founder Jane Doe, a certified Health Coach, offer you to take your life into control and learn the best tricks and tips through the courses and consultations available online.</p>
+                <p class="online__text">Visit the link below for private coaching programs and <span class="bold"> say YES to living your best life!</span></p>
                 <a href="#" class="button">Read more</a>
                 
             </div>
 
         </div>
     </section>
-
+    <!-- CONTACT -->
     <section class="contact section bd-container">
         <h3>Contact us!</h3>
         <div class="contact__form bd-flex">
@@ -98,10 +102,37 @@
             <button class="button" type="submit">Submit</button>
         </form>
         <figure class="contact__figure">
-            <img src="img/hello.png" alt="" srcset="">
+            <img src="img/hello.png" alt="photo formulaire">
         </figure>
     </div>
     </section>
+</main>
+    <footer class="footer">
+        <div class="bd-container">
+        <div class="footer__social bd-flex">
+            <div class="footer__info-address">
+                <p class="footer__company">Beauty&Lifestyle</p>
+                <p class="footer__city">New York, USA</p>
+                <a class="footer__mail" href="#">beauty@lifestyle.com</a>
+            </div>
+            <div class="footer__social">
+                <a  class="footer__bx" href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a  class="footer__bx" href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a  class="footer__bx" href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <nav class="nav nav--footer">
+            <a class="nav__link nav__link-color " href="#">Home</a>
+            <a class="nav__link nav__link-color " href="#">Our Story</a>
+            <a class="nav__link nav__link-color " href="#">FaceStudio</a>
+            <a class="nav__link nav__link-color " href="#">Jane Doe Lifestyle</a>
+            <a class="nav__link nav__link-color " href="#">Privacy</a>
+            <a class="nav__link nav__link-color " href="#">Terms & Conditions</a>
+        </nav>
+    </div>
+    </footer>
+    
+    <!-- SCRIPT -->
     <script src="js/main.js"></script>
 </body>
 
