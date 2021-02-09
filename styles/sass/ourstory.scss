@@ -1,7 +1,13 @@
 // BIG TITLE
 .story {
-    background-color: black;
-    padding: 23rem 5rem;
+    background: {
+        image: url('../../img/woman-nature.png');
+        size: cover;
+        attachment: fixed;
+        repeat: no-repeat;
+        position: center;
+    };
+    padding: 27rem 5rem;
 
     &__container {
         text-align: center;
@@ -27,6 +33,28 @@
         position: relative;
         max-width: 25rem;
 
+        &::after {
+            position: absolute;
+            content: url(../../img/bubble_3.svg);
+            top: 7rem;
+            left: 8rem;
+            z-index: -1;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+            top: 16rem;
+            left: 9rem;
+            padding: 10rem;
+            z-index: -1;
+            border-radius: 10rem;
+            -webkit-border-radius: 10rem;
+            -moz-border-radius: 10rem;
+            -ms-border-radius: 10rem;
+            -o-border-radius: 10rem;
+}
     }
 
 }
@@ -37,9 +65,149 @@
 
     &__content {
         position: relative;
+        padding-bottom: 40rem;
+
+    }
+
+    &__bubble-one, &__bubble-two, &__bubble-three, &__bubble-four {
+        position: absolute;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+    &__bubble-one, &__bubble-three {
+        background: #FFFFFF;
+        box-shadow: 0px 3px 6px #7BA2C4;
+    
+    }
+    &__bubble-two, &__bubble-four {
+        background: transparent linear-gradient(123deg, #CFE5F8 0%, #FFFFFF 100%);
+    }
+
+    &__bubble-one, &__bubble-two {
+        padding: 7rem 3rem;
+        max-width: 23rem;
     }
 
     &__bubble-one {
+        top: 14rem;
+        left: 6rem;
+    }
+
+    &__bubble-two {
+        top: 2rem;
+        left: 20rem;
+    }
+
+    &__bubble-three {
+        top: 4rem;
+        left: 41rem;
+        width: 27rem;
+        padding: 6rem 4rem;
+    }
+    &__bubble-four {
+        top: 18rem;
+        left: 59rem;
+        max-width: 24rem;
+        padding: 7rem 5rem;
+    }
+}
+
+//KEEPING
+
+.keeping {
+
+    &__container {
+    justify-content: space-between;
+    padding-right: 10rem;
+    margin-top: 15rem;
+    }
+
+    
+
+    &__title, &__lil-title  {
+        color: $titleColorBlue;
+    }
+    &__lil-title {
+        font-family: $fontFamily-normal;
+        font-weight: $fontWeight-light;
+    }
+
+    
+
+    &__content-studio {
+        max-width: 32rem;
+    }
+
+    &__content-studio-bis {
+        text-align: right;
+    }
+
+    &__figure {
+        position: relative;
+        max-width: 25rem;
+    }
+    
+    &__figure-faces {
+        &::after {
+            position: absolute;
+            content: url(../../img/bubble_3.svg);
+            top: -3rem;
+            left: 6rem;
+            z-index: -1;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+            top: -8rem;
+            left: 6rem;
+            padding: 9rem;
+            z-index: -1;
+            border-radius: 10rem;
+            -webkit-border-radius: 10rem;
+            -moz-border-radius: 10rem;
+            -ms-border-radius: 10rem;
+            -o-border-radius: 10rem;
+}
+
+    }
+
+    &__figure-grapes {
+
+        &::after {
+            position: absolute;
+            content: url(../../img/bubble_3.svg);
+            top: 7rem;
+            left: 8rem;
+            z-index: -1;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+            top: 16rem;
+            left: 10rem;
+            padding: 9rem;
+            z-index: -1;
+            border-radius: 10rem;
+            -webkit-border-radius: 10rem;
+            -moz-border-radius: 10rem;
+            -ms-border-radius: 10rem;
+            -o-border-radius: 10rem;
+}
         
+    }
+
+    &__last-para {
+        width: 55rem;
+        margin: 5rem auto 0;
+        text-align: center;
+
     }
 }

@@ -36,8 +36,12 @@ td, th {
   padding: 0; }
 
 .story {
-  background-color: black;
-  padding: 23rem 5rem; }
+  background-image: url("../../img/woman-nature.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 27rem 5rem; }
   .story__container {
     text-align: center; }
 
@@ -51,11 +55,121 @@ td, th {
 .beauty__figure {
   position: relative;
   max-width: 25rem; }
+  .beauty__figure::after {
+    position: absolute;
+    content: url(../../img/bubble_3.svg);
+    top: 7rem;
+    left: 8rem;
+    z-index: -1; }
+  .beauty__figure::before {
+    position: absolute;
+    content: '';
+    background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+    top: 16rem;
+    left: 9rem;
+    padding: 10rem;
+    z-index: -1;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem; }
 
 .message {
   text-align: center; }
   .message__content {
-    position: relative; }
+    position: relative;
+    padding-bottom: 40rem; }
+  .message__bubble-one, .message__bubble-two, .message__bubble-three, .message__bubble-four {
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  .message__bubble-one, .message__bubble-three {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #7BA2C4; }
+  .message__bubble-two, .message__bubble-four {
+    background: transparent linear-gradient(123deg, #CFE5F8 0%, #FFFFFF 100%); }
+  .message__bubble-one, .message__bubble-two {
+    padding: 7rem 3rem;
+    max-width: 23rem; }
+  .message__bubble-one {
+    top: 14rem;
+    left: 6rem; }
+  .message__bubble-two {
+    top: 2rem;
+    left: 20rem; }
+  .message__bubble-three {
+    top: 4rem;
+    left: 41rem;
+    width: 27rem;
+    padding: 6rem 4rem; }
+  .message__bubble-four {
+    top: 18rem;
+    left: 59rem;
+    max-width: 24rem;
+    padding: 7rem 5rem; }
+
+.keeping__container {
+  justify-content: space-between;
+  padding-right: 10rem;
+  margin-top: 15rem; }
+.keeping__title, .keeping__lil-title {
+  color: #4379A8; }
+.keeping__lil-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; }
+.keeping__content-studio {
+  max-width: 32rem; }
+.keeping__content-studio-bis {
+  text-align: right; }
+.keeping__figure {
+  position: relative;
+  max-width: 25rem; }
+.keeping__figure-faces::after {
+  position: absolute;
+  content: url(../../img/bubble_3.svg);
+  top: -3rem;
+  left: 6rem;
+  z-index: -1; }
+.keeping__figure-faces::before {
+  position: absolute;
+  content: '';
+  background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+  top: -8rem;
+  left: 6rem;
+  padding: 9rem;
+  z-index: -1;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem; }
+.keeping__figure-grapes::after {
+  position: absolute;
+  content: url(../../img/bubble_3.svg);
+  top: 7rem;
+  left: 8rem;
+  z-index: -1; }
+.keeping__figure-grapes::before {
+  position: absolute;
+  content: '';
+  background: transparent linear-gradient(126deg, #A8C6E0 0%, #FCFDFE 90%, #FFFFFF 100%);
+  top: 16rem;
+  left: 10rem;
+  padding: 9rem;
+  z-index: -1;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem; }
+.keeping__last-para {
+  width: 55rem;
+  margin: 5rem auto 0;
+  text-align: center; }
 
 body {
   font-size: 1.5rem;
@@ -127,7 +241,7 @@ button {
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem; }
 
-.section-title-center {
+.section-title-center, .para-center {
   text-align: center; }
 
 .bd-container {
@@ -146,10 +260,6 @@ button {
 
 .font-satisfy {
   font-family: "Satisfy", cursive; }
-
-.fadein {
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s; }
 
 .relief-bg {
   background: transparent linear-gradient(180deg, #CFE5F8 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box; }
@@ -189,7 +299,7 @@ button {
 
 .bg-header {
   position: relative;
-  padding: 35.2rem 0 10rem 4rem;
+  padding: 35.2rem 0 15rem 4rem;
   overflow: hidden; }
   .bg-header video {
     position: absolute;
